@@ -1,0 +1,8 @@
+{
+  "passport": { "id": "NMC-BAT-2025-FR-8105", "version": "1.0.0", "status": "prototype" },
+  "battery": { "batteryType": "traction_battery", "model": "Çekiş Bataryası - NMC 811",
+    "chemistry": { "label": "NMC 811" },
+    "manufacturing": { "year": 2025, "country": "FR" }
+  },
+  "carbonFootprint": { "total": { "value": 77, "unit": "kgCO2e_per_kWh" } }
+}
