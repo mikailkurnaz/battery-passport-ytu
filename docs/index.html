@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Battery Passport Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background:#f5f5f5; }
+    .box { background:white; padding:16px; border-radius:12px; margin-bottom:12px; }
+    pre { background:#111; color:#dbeafe; padding:12px; border-radius:10px; overflow:auto; }
+    select { padding:10px; border-radius:10px; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; background:#eef2ff; color:#3730a3; font-weight:700; }
+  </style>
+</head>
+<body>
+  <h1>🔋 Dijital Batarya Pasaportu (Demo)</h1>
+
+  <div class="box">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <div>
+        <div style="font-size:12px; color:#666;">Pasaport seç</div>
+        <select id="passportSelect"></select>
+      </div>
+      <div>
+        <span id="statusPill" class="pill">—</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="box" id="summary">Yükleniyor...</div>
+
+  <div class="box">
+    <h3>Ham JSON</h3>
+    <pre id="raw"></pre>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
